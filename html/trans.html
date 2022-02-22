@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>超分转换</title>
+    </head>
+    <body>
+        <div class="transWrapper">
+            <!-- <div class="type-switch">
+                <input type="radio" id="type-img" name="fileType"
+                 value="image" checked>
+                <label for="type-img">图片</label>
+
+                <input type="radio" id="type-video" name="fileType" value="video">
+                <label for="type-video">视频</label>
+            </div> -->
+            <div class="type-switch">
+                <div class="text">
+                    <span>请选择图片或视频文件：</span>
+                </div>
+            </div>
+
+            <div class="file-upload">
+                <input type="file" accept="image/*" class="hidden" multiple>
+                <div class="area drop-area">
+                    <div class="hint hint-upload">
+                        <i class="fas fa-file-upload"></i>
+                        <span>点击上传文件或拖拽到此处</span>
+                    </div>
+                    <!-- <div class="file-item">
+                        <div class="filenameWrapper">
+                            <i class="fas fa-file"></i>
+                            <span class="file-name">filename.jpg</span>
+                        </div>
+                        <div class="fileOps">
+                            <a class="file-op file-preview">预览</a>
+                            <a class="file-op file-delete">删除</a>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="tran-middle">
+                    <button class="trans-button">转换</button>
+                    <i class="fas fa-angle-double-down"></i>
+                </div>
+
+                <div class="area result-area">
+                    <div class="hint hint-result">
+                        <span>尚无转换结果</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../scripts/trans.js"></script>
+    </body>
+</html>

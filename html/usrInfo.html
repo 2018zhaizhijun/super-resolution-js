@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>个人资料</title>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="usrInfoWrapper">
+            <div class="avatarWrapper">
+                <img id="avatar" src="" alt="用户头像" width="100">
+                <a id="upload-avatar-button" class="link">点击上传头像</a>
+            </div>
+            <main class="main-usrInfo">
+                <div class="formWrapper">
+                    <form action="" method="post" class="form-usrInfo">
+                        <div class="input-block input-usrname">
+                            <input type="text" class="edit hidden" name="username" id="username" 
+                             minlength="1" maxlength="20" size="11" required>
+                            <span class="usr-name info"> zz </span>
+                            <label for="username">用户名：</label>
+                        </div>
+                        <div class="input-block">
+                            <span class="usr-telephone">18607339539</span>
+                            <label>手机号码：</label>
+                        </div>
+                        <div class="input-block input-sex">
+                            <div class="edit hidden sex-select">
+                                <div class="radio-item">
+                                    <input type="radio" id="sex-male" name="sex"
+                                    value="0">
+                                    <label for="sex-male">男</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="sex-female" name="sex" 
+                                    value="1" checked>
+                                    <label for="sex-female">女</label>
+                                </div>
+                            </div>
+                            <span class="usr-sex info"> 女 </span>
+                            <label>性别：</label>
+                        </div>
+                        <div class="submit-usrInfo">
+                            <button id="save-button" class="edit hidden" type="submit" value="save">保  存</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="edit-button-block">
+                    <i class="fas fa-edit"></i>
+                    <a href="#" id="edit-button">编辑</a>
+                </div>
+            </main>
+        </div>
+
+        <script src="../scripts/usrInfo.js"></script>
+    </body>
+</html>

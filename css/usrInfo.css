@@ -1,0 +1,171 @@
+.usrInfoWrapper {
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    position: relative;
+    width: 90%;
+    height: 75%;
+    margin: 0 auto;
+    top: 10%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.usrInfoWrapper a {
+    font-size: 1rem;
+    color: #235c9c;
+    border-bottom: 2px solid #235c9c;
+    cursor: pointer;
+}
+
+.usrInfoWrapper label {
+    align-self: center;
+    flex: 0 0 40%;
+}
+
+.avatarWrapper {
+    margin-bottom: 20px;
+    flex: 0 0 10%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.avatarWrapper img {
+    display: block;
+    height: 100%;
+    /* width: 120px; */
+    margin-right: 15px;
+    max-height: 120px;
+}
+
+.main-usrInfo {
+    width: 100%;
+    flex: 0 0 70%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formWrapper {
+    flex-grow: 1;
+    background-color: beige;
+    box-shadow: 2px 2px 5px 2px #8b8a8a;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.form-usrInfo {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media (min-width: 425px) {
+    .form-usrInfo {
+        width: 60%;
+    }
+}
+
+.input-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0 1 20%;
+    padding-bottom: 0.2rem;
+}
+
+.usrInfoWrapper label {
+    white-space: nowrap;
+}
+
+.input-usrname input {
+    line-height: 2rem;
+    width: 100%;
+    align-self: center;
+    background-color: #fcfcfc;
+    border:1px solid #CCC;
+    box-shadow: 0 0 5px #CCC inset;
+}
+
+.sex-select input {
+    appearance: none;  /* 加前缀 */
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+}
+
+.sex-select input:checked {
+    border: 6px solid black;
+}
+
+.sex-select {
+    display: flex;
+}
+
+.radio-item {
+    margin-right: 10px;
+}
+
+.submit-usrInfo {
+    width: 100%;
+    flex: 0 0 10%;
+    margin-top: auto;
+}
+
+.submit-usrInfo button {
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    padding: 5px 20px;
+    /* display: none; */
+}
+
+.edit-button-block {
+    align-self: flex-end;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+@media (min-width: 425px) {
+    .usrInfoWrapper {
+        height: 80%;
+        top: 10%;
+    }
+
+    .usrInfoWrapper button {
+        padding: 8px 0;
+    }
+
+    .submit-usrInfo button {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+/* .edit {
+    display: none;
+} */
+
+/* .info {
+    display: none;
+} */

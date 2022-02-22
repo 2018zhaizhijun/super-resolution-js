@@ -1,0 +1,65 @@
+.histWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 100%;
+    margin: 0 auto;
+    /* background-color: #fcfcfc; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hist-item {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #fcfcfc;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px #eeeded;
+    margin-top: 20px;
+}
+
+.delete-button {
+    position: absolute;
+    right: 6%;
+    cursor: pointer;
+}
+
+.note {
+    padding: 5px 10px;
+}
+
+.hist-pics {
+    display: flex;
+    margin: 5px;
+    justify-content: space-evenly;
+}
+
+.pic-block {
+    flex: 0 0 40%;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pic-block img {
+    width: 100%;
+}
+
+.link-download {
+    align-self: flex-end;
+    font-size: .9rem;
+    line-height: 1.1rem;
+    margin: 5px 0;
+    color: #235c9c;
+    border-bottom: 2px solid #235c9c;
+}
+
+@media (min-width: 425px) {
+    /* .hist-item {
+        width: 60%;
+    } */
+}

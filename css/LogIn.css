@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #fcfcf7;
+    color: #292828;
+}
+
+.bodyWrapper {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    position: relative;
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerWrapper {
+    font-size: 1.1rem;
+    flex: 0 0 20%;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    transition: font-size .5s;
+}
+
+@media (min-width: 375px) {
+    .headerWrapper {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .headerWrapper {
+        font-size: 1.5rem;
+    }
+}
+
+.main-login {
+    background-color: beige;
+    box-shadow: 2px 2px 5px 2px #8b8a8a;
+    border-radius: 15px;
+    width: 100%;
+    flex: 0 0 60%;
+    max-width: 600px;
+}
+
+.mainWrapper {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 425px) {
+    .mainWrapper {
+        width: 70%;
+    }
+}
+
+.form-login {
+    width: 100%;
+    flex: 1 0 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.input-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex: 0 0 30%;
+    /* padding-bottom: 0.5rem; */
+}
+
+label {
+    padding-bottom: 2px;
+    white-space: nowrap;
+    align-self: flex-start;
+}
+
+input {
+    line-height: 2rem;
+    width: 100%;
+    align-self: center;
+    background-color: #fcfcfc;
+    border:1px solid #CCC;
+    box-shadow: 0 0 5px #CCC inset;
+}
+
+@media (min-width: 425px) {
+    .input-login {
+        flex-direction: row-reverse;
+    }
+    
+    label {
+        align-self: center;
+        flex: 0 0 30%;
+    }
+
+    input {
+        flex: 1 1 70%;
+    }
+}
+
+.submit-login {
+    width: 100%;
+    flex: 0 0 20%;
+    margin-top: auto;
+}
+
+.submit-login button {
+    display: block;
+    color: beige;
+    font-size: 1.2rem;
+    border: 1px solid transparent;
+    outline: none;
+    width: 100%;
+    padding: 3px 0;
+    border-radius: 10px;
+    background-color: #327e45;
+    cursor: pointer;
+}
+
+.submit-login button:hover {
+    background-color: #2b6d3b;
+}
+
+@media (min-width: 425px) {
+    .submit-login button {
+        padding: 8px 0;
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+.link-register {
+    flex: 0 0 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -0.1rem;
+    color: #4d6cf5;
+}
+

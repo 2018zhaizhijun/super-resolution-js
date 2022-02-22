@@ -1,0 +1,147 @@
+.transWrapper {
+    width: 100%;
+    height: 80%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #3b3b3b;
+}
+
+.type-switch {
+    flex: 0 0 10%;
+    margin-left: 5%;
+    align-self: flex-start;
+}
+
+.type-switch input {
+    appearance: none;  /* 加前缀 */
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+}
+
+.type-switch input:checked {
+    border: 6px solid black;
+}
+
+.transWrapper a {
+    font-size: 1rem;
+    color: #235c9c;
+    border-bottom: 2px solid #235c9c;
+}
+
+.file-upload {
+    width: 80%;
+    height: 100%;
+    flex: 0 0 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.area {
+    width: 100%;
+    flex: 1 0 40%;
+    border-radius: 10px;
+    background-color: #fcfcfcf3;
+    box-shadow: 0 0 5px #CCC inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    cursor: default;
+}
+
+.drop-area {
+    cursor: pointer;
+}
+
+.hint {
+    width: 80%;
+    margin: 10% auto;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    opacity: 0.6;
+}
+
+.fas {
+    padding: 0 5px;
+    color: #888787;
+}
+
+.file-item {
+    padding: 0 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fileOps {
+    margin-left: auto;
+}
+
+.fa-angle-double-down {
+    padding-right: 5px;
+    font-size: 1.5rem;
+}
+
+.tran-middle {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 10px;
+}
+
+.progress-bar {
+    width: 100px;
+}
+
+.preview {
+    display: block;
+    position: absolute;
+    height: 50%;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 50vw 50vw #ffffffa9;
+}
+
+@media (min-width: 425px) {
+    .transWrapper button {
+        font-size: 1.2rem;
+    }
+
+    .type-switch {
+        font-size: 1.2rem;
+    }
+
+    .file-upload {
+        flex-direction: row;
+    }
+
+    .area {
+        width: auto;
+        height: 80%;
+    }
+
+    .tran-middle {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+
+    .fa-angle-double-down {
+        transform: rotate(-90deg);
+        padding-right: 10px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
